@@ -1,0 +1,16 @@
+package club.cloudcastgames.castlib.command;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface Command {
+    String[] names();
+    String description() default "";
+    String permission() default "";
+    boolean async() default false;
+    boolean hidden() default false;
+}

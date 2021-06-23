@@ -1,0 +1,4 @@
+name: CastLib
+version: ${project.version}
+main: club.cloudcastgames.castlib.CastLib
+api-version: 1.15
